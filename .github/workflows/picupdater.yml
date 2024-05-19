@@ -27,7 +27,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        image=${{ steps.select-image.outputs.image }}
+        image=${{ https://torbware.space/images/owner23.jpg }}
         curl -X POST -H "Authorization: token $GH_TOKEN" \
         -H "Content-Type: application/json" \
         -d "{\"avatar_url\":\"$image\"}" \
